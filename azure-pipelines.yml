@@ -59,10 +59,10 @@ steps:
 - task: AppCenterTest@1
   inputs:
     appFile: 
-    artifactsDirectory: '$(Build.ArtifactStagingDirectory)/AppCenterTest' 
+    #artifactsDirectory: '$(Build.ArtifactStagingDirectory)/AppCenterTest' 
     #prepareTests: true # Optional
     #frameworkOption: 'appium' # Required when prepareTests == True# Options: appium, espresso, calabash, uitest, xcuitest
-    appiumBuildDirectory: '$(build.artifactStagingDirectory)'# Required when prepareTests == True && Framework == Appium
+    appiumBuildDirectory: ''# Required when prepareTests == True && Framework == Appium
     #espressoBuildDirectory: # Optional
     #espressoTestApkFile: # Optional
     #calabashProjectDirectory: # Required when prepareTests == True && Framework == Calabash
